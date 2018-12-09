@@ -1,5 +1,5 @@
-class SimpleScraper
-  def self.marvel_films_scraper
+class MarvelFilmsScraper
+  def self.scrape
     endpoint = 'https://www.marvel.com/movies'
     doc = Nokogiri::HTML.parse(open(endpoint))
 
