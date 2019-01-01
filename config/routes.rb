@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'home_page/index'
   get 'home_page', :to => 'home_page#index'
   get 'google_image_scrape', :to => 'home_page#google_image_scrape'
+  get 'marvel_image_scrape', :to => 'home_page#marvel_image_scrape'
 end
