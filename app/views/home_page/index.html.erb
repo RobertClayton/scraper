@@ -1,17 +1,4 @@
 <h1>Marvel Films</h1>
-<p>Scraped from https://www.marvel.com/movies</p>
+<p><%= link_to "Scrape Film list from Marvel", marvel_films_scraper_index_path %></p>
 <p><%= link_to "Scrape images from Google", google_image_scrape_path %></p>
 <p><%= link_to "Scrape images from Marvel", marvel_image_scrape_path %></p>
-<table>
-  <tr>
-    <th>Film</th>
-    <th>Date</th>
-  </tr>
-
-  <% @marvel_scraper.each do |film| %>
-    <tr>
-      <td><%= film[0] %></td>
-      <td><%= film[1] %></td>
-    </tr>
-  <% end %>
-</table>

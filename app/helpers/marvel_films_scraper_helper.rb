@@ -1,0 +1,2 @@
+module MarvelFilmsScraperHelper
+end
